@@ -45,4 +45,17 @@ img {
 
 .column {
   width: 25%;
+  text-decoration: none;
+  color: black;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#lista {
+  width: 80%;
+  text-align: justify;
+  margin: 0 auto;
 }

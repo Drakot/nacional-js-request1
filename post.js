@@ -64,8 +64,11 @@ function printData(dataJSON) {
 
             return existUser
         })
-        const div = document.createElement("div")
-        div.classList.add("column")
+
+        const a = document.createElement("a")
+        a.classList.add("column")
+        a.href = `comments.html?id=${postInfo.id}`
+
         const pExterior = document.createElement("p")
 
         //Post(viene de API)
@@ -84,11 +87,11 @@ function printData(dataJSON) {
         pExterior.appendChild(img)
         pExterior.appendChild(p)
 
-        div.appendChild(h2)
-        div.appendChild(pExterior)
+        a.appendChild(h2)
+        a.appendChild(pExterior)
 
 
-        lista.appendChild(div)
+        lista.appendChild(a)
     }
 }
 
